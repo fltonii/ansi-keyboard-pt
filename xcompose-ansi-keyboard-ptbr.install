@@ -1,7 +1,7 @@
 post_install() {
     echo ""
     echo ">>> xcompose-ansi-keyboard-ptbr installed!"
-    echo ">>> Run the install script to set up your XCompose file:"
+    echo ">>> Run the install script to configure XCompose and Fcitx5:"
     echo ">>>"
     echo ">>>   /usr/share/xcompose-ansi-keyboard-ptbr/install.sh"
     echo ">>>"
@@ -12,7 +12,7 @@ post_install() {
 post_upgrade() {
     echo ""
     echo ">>> xcompose-ansi-keyboard-ptbr upgraded!"
-    echo ">>> Run the install script again to update your XCompose file:"
+    echo ">>> Run the install script again to update your configuration:"
     echo ">>>"
     echo ">>>   /usr/share/xcompose-ansi-keyboard-ptbr/install.sh"
     echo ">>>"

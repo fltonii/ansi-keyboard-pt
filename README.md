@@ -44,6 +44,15 @@ Com o Fcitx5 configurado (feito automaticamente pelo script de instalação):
 
 > **Nota:** Sem o Fcitx5, apenas apps Qt/KDE nativos funcionam. O Fcitx5 é necessário para que as sequências de composição funcionem em apps GTK e Chromium/Electron.
 
+### Como funciona
+
+O script de instalação faz o seguinte:
+
+1. Copia uma tabela `~/.XCompose` personalizada com os remapeamentos de teclas mortas
+2. Instala o [Fcitx5](https://fcitx-im.org/) como método de entrada do sistema — ele intercepta as teclas antes de qualquer app, fazendo o XCompose funcionar em todo lugar
+3. Configura o Fcitx5 como Teclado Virtual do KDE via `kwinrc`
+4. Configura o layout "English (US, alt. intl.)" no perfil do Fcitx5
+
 ### Instalação
 
 **Via AUR (recomendado):**
@@ -65,7 +74,7 @@ Isso instala automaticamente o Fcitx5 e as dependências. Depois execute o scrip
 sudo pacman -S fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt
 
 # Clone e execute o instalador
-git clone https://github.com/fltonii/xcompose-ansi-keyboard-ptbr.git
+git clone https://github.com/fltonii/ansi-keyboard-pt.git
 cd xcompose-ansi-keyboard-ptbr
 ./install.sh
 ```
@@ -135,6 +144,15 @@ With Fcitx5 configured (done automatically by the install script):
 
 > **Note:** Without Fcitx5, only Qt/KDE native apps work. Fcitx5 is required for compose sequences to work in GTK and Chromium/Electron apps.
 
+### How it works
+
+The install script does the following:
+
+1. Copies a custom `~/.XCompose` table with the dead key remappings
+2. Sets up [Fcitx5](https://fcitx-im.org/) as the system input method — it intercepts key events before any app sees them, making XCompose work everywhere
+3. Configures Fcitx5 as the KDE Virtual Keyboard via `kwinrc`
+4. Sets the "English (US, alt. intl.)" layout in the Fcitx5 profile
+
 ### Installation
 
 **Via AUR (recommended):**
@@ -156,7 +174,7 @@ This automatically installs Fcitx5 and dependencies. Then run the install script
 sudo pacman -S fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt
 
 # Clone and run the installer
-git clone https://github.com/fltonii/xcompose-ansi-keyboard-ptbr.git
+git clone https://github.com/fltonii/ansi-keyboard-pt.git
 cd xcompose-ansi-keyboard-ptbr
 ./install.sh
 ```
