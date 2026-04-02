@@ -23,6 +23,7 @@ Correção da tabela de composição de teclas mortas (dead keys) no Linux para 
 |---|---|---|
 | `´ + c` | ć | **ç** |
 | `´ + C` | Ć | **Ç** |
+| `´ + l` | ĺ | **'l** |
 | `´ + m` | ḿ | **'m** |
 | `´ + n` | ń | **'n** |
 | `´ + p` | ṕ | **'p** |
@@ -75,7 +76,7 @@ sudo pacman -S fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt
 
 # Clone e execute o instalador
 git clone https://github.com/fltonii/ansi-keyboard-pt.git
-cd xcompose-ansi-keyboard-ptbr
+cd ansi-keyboard-pt
 ./install.sh
 ```
 
@@ -123,6 +124,7 @@ Dead key compose table fix for Linux, for people who:
 |---|---|---|
 | `´ + c` | ć | **ç** |
 | `´ + C` | Ć | **Ç** |
+| `´ + l` | ĺ | **'l** |
 | `´ + m` | ḿ | **'m** |
 | `´ + n` | ń | **'n** |
 | `´ + p` | ṕ | **'p** |
@@ -175,7 +177,7 @@ sudo pacman -S fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt
 
 # Clone and run the installer
 git clone https://github.com/fltonii/ansi-keyboard-pt.git
-cd xcompose-ansi-keyboard-ptbr
+cd ansi-keyboard-pt
 ./install.sh
 ```
 

@@ -7,6 +7,8 @@ include "%L"
 
 # Pass through dead_acute + unused consonants as apostrophe + letter
 # This makes contractions like "I'm" work naturally
+<dead_acute> <l> : "'l"
+<dead_acute> <L> : "'L"
 <dead_acute> <m> : "'m"
 <dead_acute> <M> : "'M"
 <dead_acute> <n> : "'n"
