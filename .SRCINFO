@@ -6,6 +6,9 @@ pkgbase = xcompose-ansi-keyboard-ptbr
 	install = xcompose-ansi-keyboard-ptbr.install
 	arch = any
 	license = MIT
+	depends = fcitx5
+	depends = fcitx5-gtk
+	depends = fcitx5-qt
 	source = xcompose-ansi-keyboard-ptbr-1.0.0.tar.gz::https://github.com/fltonii/xcompose-ansi-keyboard-ptbr/archive/refs/tags/v1.0.0.tar.gz
 	sha256sums = SKIP
 

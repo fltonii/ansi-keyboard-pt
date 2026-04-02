@@ -36,19 +36,23 @@ Correção da tabela de composição de teclas mortas (dead keys) no Linux para 
 
 ### Compatibilidade
 
+Com o Fcitx5 configurado (feito automaticamente pelo script de instalação):
+
 - **Apps Qt/KDE nativos** (Konsole, Kate, Dolphin etc.): funciona perfeitamente
-- **Apps GTK** (Firefox, Nautilus etc.): pode funcionar dependendo do método de entrada (input method) configurado
-- **Apps Electron** (VSCode, Discord etc.): **não funciona** — o Chromium usa sua própria tabela de composição interna
+- **Apps GTK** (Firefox, Nautilus etc.): funciona perfeitamente
+- **Apps Electron** (VSCode, Discord etc.): funciona perfeitamente
+
+> **Nota:** Sem o Fcitx5, apenas apps Qt/KDE nativos funcionam. O Fcitx5 é necessário para que as sequências de composição funcionem em apps GTK e Chromium/Electron.
 
 ### Instalação
 
-**Via AUR:**
+**Via AUR (recomendado):**
 
 ```bash
 yay -S xcompose-ansi-keyboard-ptbr
 ```
 
-Depois execute o script de instalação:
+Isso instala automaticamente o Fcitx5 e as dependências. Depois execute o script de instalação:
 
 ```bash
 /usr/share/xcompose-ansi-keyboard-ptbr/install.sh
@@ -57,6 +61,10 @@ Depois execute o script de instalação:
 **Manual:**
 
 ```bash
+# Instale o Fcitx5 primeiro
+sudo pacman -S fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt
+
+# Clone e execute o instalador
 git clone https://github.com/fltonii/xcompose-ansi-keyboard-ptbr.git
 cd xcompose-ansi-keyboard-ptbr
 ./install.sh
@@ -119,19 +127,23 @@ Dead key compose table fix for Linux, for people who:
 
 ### Compatibility
 
+With Fcitx5 configured (done automatically by the install script):
+
 - **Qt/KDE native apps** (Konsole, Kate, Dolphin etc.): works fully
-- **GTK apps** (Firefox, Nautilus etc.): may work depending on the configured input method
-- **Electron apps** (VSCode, Discord etc.): **does NOT work** — Chromium uses its own internal compose table
+- **GTK apps** (Firefox, Nautilus etc.): works fully
+- **Electron apps** (VSCode, Discord etc.): works fully
+
+> **Note:** Without Fcitx5, only Qt/KDE native apps work. Fcitx5 is required for compose sequences to work in GTK and Chromium/Electron apps.
 
 ### Installation
 
-**Via AUR:**
+**Via AUR (recommended):**
 
 ```bash
 yay -S xcompose-ansi-keyboard-ptbr
 ```
 
-Then run the install script:
+This automatically installs Fcitx5 and dependencies. Then run the install script:
 
 ```bash
 /usr/share/xcompose-ansi-keyboard-ptbr/install.sh
@@ -140,6 +152,10 @@ Then run the install script:
 **Manual:**
 
 ```bash
+# Install Fcitx5 first
+sudo pacman -S fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt
+
+# Clone and run the installer
 git clone https://github.com/fltonii/xcompose-ansi-keyboard-ptbr.git
 cd xcompose-ansi-keyboard-ptbr
 ./install.sh

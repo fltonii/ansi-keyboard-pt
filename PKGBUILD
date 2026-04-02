@@ -6,6 +6,7 @@ pkgdesc="XCompose overrides for Brazilian Portuguese on ANSI keyboards with US a
 arch=('any')
 url="https://github.com/fltonii/xcompose-ansi-keyboard-ptbr"
 license=('MIT')
+depends=('fcitx5' 'fcitx5-gtk' 'fcitx5-qt')
 install=xcompose-ansi-keyboard-ptbr.install
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=('SKIP')
