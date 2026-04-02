@@ -1,0 +1,25 @@
+# Include the default compose table
+include "%L"
+
+# Fix dead_acute + c/C to produce cedilla instead of ć/Ć
+<dead_acute> <c> : "ç"   ccedilla
+<dead_acute> <C> : "Ç"   Ccedilla
+
+# Pass through dead_acute + unused consonants as apostrophe + letter
+# This makes contractions like "I'm" work naturally
+<dead_acute> <m> : "'m"
+<dead_acute> <M> : "'M"
+<dead_acute> <n> : "'n"
+<dead_acute> <N> : "'N"
+<dead_acute> <p> : "'p"
+<dead_acute> <P> : "'P"
+<dead_acute> <r> : "'r"
+<dead_acute> <R> : "'R"
+<dead_acute> <s> : "'s"
+<dead_acute> <S> : "'S"
+<dead_acute> <t> : "'t"
+<dead_acute> <T> : "'T"
+<dead_acute> <w> : "'w"
+<dead_acute> <W> : "'W"
+<dead_acute> <y> : "'y"
+<dead_acute> <Y> : "'Y"

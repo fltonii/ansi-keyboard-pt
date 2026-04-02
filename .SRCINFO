@@ -1,0 +1,12 @@
+pkgbase = xcompose-ansi-keyboard-ptbr
+	pkgdesc = XCompose overrides for Brazilian Portuguese on ANSI keyboards with US alt. intl. layout
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/fltonii/xcompose-ansi-keyboard-ptbr
+	install = xcompose-ansi-keyboard-ptbr.install
+	arch = any
+	license = MIT
+	source = xcompose-ansi-keyboard-ptbr-1.0.0.tar.gz::https://github.com/fltonii/xcompose-ansi-keyboard-ptbr/archive/refs/tags/v1.0.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = xcompose-ansi-keyboard-ptbr
