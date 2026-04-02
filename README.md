@@ -30,6 +30,7 @@ Correção da tabela de composição de teclas mortas (dead keys) no Linux para 
 | `´ + r` | ŕ | **'r** |
 | `´ + s` | ś | **'s** |
 | `´ + t` | ť | **'t** |
+| `´ + v` | ǘ | **'v** |
 | `´ + w` | ẃ | **'w** |
 | `´ + y` | ý | **'y** |
 
@@ -131,6 +132,7 @@ Dead key compose table fix for Linux, for people who:
 | `´ + r` | ŕ | **'r** |
 | `´ + s` | ś | **'s** |
 | `´ + t` | ť | **'t** |
+| `´ + v` | ǘ | **'v** |
 | `´ + w` | ẃ | **'w** |
 | `´ + y` | ý | **'y** |
 
