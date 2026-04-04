@@ -5,7 +5,6 @@ XCOMPOSE_DST="$HOME/.XCompose"
 XCOMPOSE_BAK="$HOME/.XCompose.bak"
 COMPOSETABLE_SH="$HOME/.config/plasma-workspace/env/composetable.sh"
 EXPECTED_CONTENT='export XCOMPOSEFILE="$HOME/.XCompose"'
-FCITX5_DESKTOP="/usr/share/applications/org.fcitx.Fcitx5.desktop"
 
 # Remove or restore ~/.XCompose
 if [ -f "$XCOMPOSE_BAK" ]; then
@@ -30,15 +29,6 @@ else
     echo "$COMPOSETABLE_SH not found, nothing to remove"
 fi
 
-# Remove Fcitx5 as KDE Virtual Keyboard if we set it
-CURRENT_IM=$(kwriteconfig6 --file kwinrc --group Wayland --key InputMethod 2>/dev/null || echo "")
-if [ "$CURRENT_IM" = "$FCITX5_DESKTOP" ]; then
-    echo "Removing Fcitx5 as KDE Virtual Keyboard from kwinrc"
-    kwriteconfig6 --file kwinrc --group Wayland --key InputMethod --delete
-else
-    echo "KDE Virtual Keyboard is not set to Fcitx5, skipping"
-fi
-
 # Remove or restore Fcitx5 profile
 FCITX5_PROFILE="$HOME/.config/fcitx5/profile"
 FCITX5_PROFILE_BAK="$FCITX5_PROFILE.bak"
@@ -52,4 +42,8 @@ fi
 
 echo ""
 echo "Uninstall complete!"
-echo "Please log out and log back in for the changes to take effect."
+echo ""
+echo "Next steps:"
+echo "  1. If you want to remove Fcitx5 as your input method:"
+echo "     KDE: System Settings > Virtual Keyboard > select 'None'"
+echo "  2. Log out and log back in"
